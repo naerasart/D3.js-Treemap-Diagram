@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://unpkg.com/topojson@3"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Treemap_Diagram1.css">
+    <script defer src=Treemap_Diagram1.js></script>
+</head>
+
+<body>
+    <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js '></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <div id=header>
+        <div id="title">
+            <h2>Movie Sales</h2>
+        </div>
+        <div id="description">
+            <h3> Highest Grossing Movies Grouped by Genre</h3>
+        </div>
+    </div>
+    <div id=map>
+        <svg id="legend">  
+      
+      <rect class="legend-item" x="20" y="0" width="700" height="40" fill="purple"> </rect> 
+      <text x="20" y="15" width="50" height="20" fill="black"  font-size="8px"  >Action </text>
+     
+     
+      <rect class="legend-item" x="60" y="0" width="200" height="40" fill="green"></rect>
+      <text x="60" y="15" width="200" height="20" fill="black" font-size="8px"  >  Drama</text>
+     
+     
+      <rect  class="legend-item" x="100" y="0" width="200" height="40" fill="red"></rect>
+      <text x="100" y="15" width="200" height="20" fill="black" font-size="8px"  >   Adventure</text>
+       
+      <rect class="legend-item" x="140" y="0" width="200" height="40" fill="orange"></rect>
+      <text x="140" y="15" width="200" height="20" fill="black" font-size="  8px"  >  	Family </text> 
+
+      <rect class="legend-item" x="180" y="0" width="200" height="40" fill="white"></rect>
+      <text x="180" y="15" width="200" height="20" fill="black" font-size="8px"  >  	Animation </text> 
+
+      <rect class="legend-item" x="220" y="0" width="200" height="40" fill="blue"></rect>
+      <text x="220" y="15" width="200" height="20" fill="black" font-size="8px"  >  	 Comedy </text> 
+
+      <rect class="legend-item"  x="260" y="0" width="200" height="40" fill="grey	  "></rect>
+      <text x="260" y="15" width="200" height="20" fill="black" font-size="8px"  >  	 Biography  </text> 
+      
+</svg></div>
+
+    <div id="canvas">
+    </div>
